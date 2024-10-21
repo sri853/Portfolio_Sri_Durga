@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Personal portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <style>
+        
+        .project-card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .project-card h3 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: rgb(43, 100, 43);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            background-color: rgb(43, 100, 43);
+        }
+
+        
+          /* Case Study Section Styles */
+          .case-study {
+            background-color: white;
+            padding: 60px 20px;
+            text-align: center;
+          }
+      
+          .case-study h2 {
+            font-size: 2.5rem;
+            color: green;
+            margin-bottom: 25px;
+            position: relative;
+          }
+      
+          .case-study h2::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: green;
+            margin: 10px auto 0;
+          }
+      
+          .case-study p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.6;
+          }
+      
+          .case-study .highlight {
+            color: green;
+            font-weight: bold;
+          }
+      
+          .case-study .project-details {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+          }
+      
+          .case-study .project-details div {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          }
+      
+          .case-study .project-details h3 {
+            font-size: 1.5rem;
+            color: green;
+            margin-bottom: 15px;
+          }
+      
+          .case-study .project-details p {
+            font-size: 1rem;
+            color: #555;
+          }
+      
+          .case-study a {
+            background-color: green;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+          }
+      
+          .case-study a:hover {
+            background-color: white;
+            color: green;
+            border: 2px solid green;
+          }
+        
+      
+        
+    </style>
+  
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Personal
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Portfolio</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="services.html">Experience</a></li>
+          <li><a href="portfolio.html">skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projects.html">Case-Study</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <section id="case-study-yellow-studio" class="case-study">
+          <h2>Yellow Studio UI/UX Case Study</h2>
+          <p>As the <span class="highlight">UI/UX Developer</span> for Yellow Studio, I worked with an architecture and design studio committed to saving the world through sustainable and innovative design solutions. My focus was on creating a user-friendly digital platform that reflects their commitment to sustainability and creativity.</p>
+      
+          <div class="project-details">
+            <div>
+              <h3>Project Scope</h3>
+              <p>The project involved developing a user interface that showcases Yellow Studio’s diverse portfolio, while emphasizing their eco-friendly and world-saving design philosophy. The goal was to create a visually engaging platform that effectively communicates their sustainable architectural approach.</p>
+            </div>
+            <div>
+              <h3>Design Process</h3>
+              <p>In this project, I adopted a minimalist and eco-centric design approach, using natural color schemes and modern layouts. User testing played a key role in refining the interface to ensure ease of navigation and clarity of Yellow Studio’s mission and projects.</p>
+            </div>
+            <div>
+              <h3>Challenges & Solutions</h3>
+              <p>Balancing aesthetics with functionality was a significant challenge, as the platform had to highlight Yellow Studio’s creative designs while ensuring an intuitive user experience. Through careful design iteration and feedback, we achieved a harmonious blend of creativity and usability.</p>
+            </div>
+          </div>
+      
+          
+      </section>
+      
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Case-Study</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container">
+         <div class="project-cards-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
+
+        
+        <div class="project-card">
+            <img src="assets/img/project3.png" class="img-fluid" alt="">
+            <h3>Project 3</h3>
+            <a href="https://drive.google.com/drive/folders/1jtZEK73Xmmx3u2Zo-YJKUwnffup4IAbE?usp=sharing" target="_blank" rel="noopener">View Full Project</a><br>
+        </div>
+         </div>
+        
+
+      </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h3 class="sitename">Portfolio</h3>
+      <p>Thanks for visiting my portfolio</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
